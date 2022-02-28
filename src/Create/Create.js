@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Navbar from "../components/Navbar/Navbar"
+import './Create.css'
 
 const Create = () => {
     const [title, setTitle] = useState('')
@@ -39,18 +40,18 @@ const Create = () => {
     return (
         <div>
             <Navbar/>
-            <form onSubmit={handleSubmit}>
-                <div>
+            <form onSubmit={handleSubmit} className='form-container'>
+                <div className='form-element'>
                     <label htmlFor="title">Title: </label>
                     <input type="text" name="title" id="title" value={title}
                            onChange={({target}) => setTitle(target.value)}/>
                 </div>
-                <div>
+                <div className='form-element'>
                     <label htmlFor="description">Description: </label>
                     <input type="text" id="description" name="description" value={description}
                            onChange={({target}) => setDescription(target.value)}/>
                 </div>
-                <div>
+                <div className='form-element'>
                     <p>
                         Status:
                     </p>
@@ -66,9 +67,9 @@ const Create = () => {
                         <label htmlFor="statusChoice3">Complete</label>
                     </div>
                 </div>
-                <div>
+                <div className='form-element'>
                     <p>
-                        Status:
+                        Priority:
                     </p>
                     <div>
                         <input type="radio" id="priority1"
@@ -82,7 +83,7 @@ const Create = () => {
                         <label htmlFor="priority3">High</label>
                     </div>
                 </div>
-                <div>
+                <div className='form-element'>
                     <button type='submit'>Save</button>
                 </div>
             </form>

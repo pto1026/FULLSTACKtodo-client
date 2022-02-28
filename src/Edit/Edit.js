@@ -23,7 +23,7 @@ const Edit = () => {
             setPriority(todo.priority)
         }
         findTodo()
-    }, [])
+    }, [ID])
 
     const handleSubmit = async (e) => {
         e.preventDefault()
