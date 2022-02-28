@@ -1,0 +1,29 @@
+ul {
+    list-style-type: none;
+}
+button {
+    background-color: #153131;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.link {
+    background-color: #45CB85;
+    border-style: ridge;
+    border-width: 3px;
+    padding: 1em;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    gap: 80px;
+}
+
+.delete-button {
+    position: relative;
+    left: 150px;
+}

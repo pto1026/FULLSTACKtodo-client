@@ -34,10 +34,10 @@ const App = () => {
                 <ul>
                     {todos.map(todo => {
                         return (
-                            <li key={todo._id}>{todo.title}<br />{todo.status}<br />{todo.priority}
-                                <br /> <button onClick={() => deleteTodo(todo._id)}>Delete</button>
-                                <br /> <Link to={`edit/${todo._id}`}>
-                                    <a>Edit</a>
+                            <li className='container' key={todo._id}>{todo.title}<br />{todo.status}<br />{todo.priority}
+                                <br /> <button className='delete-button' onClick={() => deleteTodo(todo._id)}>Delete</button>
+                                <br /> <Link className='link' to={`edit/${todo._id}`}>
+                                    Edit
                                 </Link>
                             </li>
                         )
