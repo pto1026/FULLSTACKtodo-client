@@ -1,12 +1,14 @@
 import React, {useEffect} from 'react'
+import './App.css'
 
 const App = () => {
     useEffect(() => {
         document.title = 'Todoly | The Todo App'
     })
     return (
-        <div>
-            <h1>Hello World</h1>
+        <div className='page-container'>
+            <div className='inner-container'>
+            </div>
         </div>
     )
 }
