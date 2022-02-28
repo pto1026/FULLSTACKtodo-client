@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import './App.css'
+import Navbar from './components/Navbar/Navbar'
 
 const App = () => {
     useEffect(() => {
@@ -7,8 +8,7 @@ const App = () => {
     })
     return (
         <div className='page-container'>
-            <div className='inner-container'>
-            </div>
+           <Navbar />
         </div>
     )
 }
