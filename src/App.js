@@ -17,6 +17,16 @@ const App = () => {
 
         retrievePosts()
     }, [todos])
+
+    const deleteTodo = async (id) => {
+        await fetch(`http://localhost:5000/api/todos/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+    }
+
     return (
         <div className="page-container">
             <Navbar/>
@@ -26,7 +36,7 @@ const App = () => {
                         return (
                             <li key={todo._id}>{todo.title}<br />{todo.status}<br />{todo.priority}
                                 <br /> <button onClick={() => deleteTodo(todo._id)}>Delete</button>
-                                <br /> <Link to={{pathname: `/edit/${todo._id}`}}>
+                                <br /> <Link to={`edit/${todo._id}`}>
                                     <a>Edit</a>
                                 </Link>
                             </li>
