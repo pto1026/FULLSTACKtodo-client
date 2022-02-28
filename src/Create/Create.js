@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import Navbar from "../components/Navbar/Navbar"
 
 const Create = () => {
@@ -6,6 +6,10 @@ const Create = () => {
     const [description, setDescription] = useState('')
     const [status, setStatus] = useState('Pending')
     const [priority, setPriority] = useState('Low')
+
+    useEffect(() => {
+        document.title = 'Todoly | Create a Todo'
+    }, [])
 
     const handleSubmit = async (e) => {
         e.preventDefault()
