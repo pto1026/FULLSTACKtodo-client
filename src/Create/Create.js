@@ -55,7 +55,7 @@ const Create = () => {
                     <p>
                         Status:
                     </p>
-                    <div>
+                    <div className='status'>
                         <input type="radio" id="statusChoice1"
                                name="status" value="Pending" checked={status === 'Pending'} onChange={({target}) => setStatus(target.value)}/>
                         <label htmlFor="statusChoice1">Pending</label>
@@ -71,7 +71,7 @@ const Create = () => {
                     <p>
                         Priority:
                     </p>
-                    <div>
+                    <div className='priority'>
                         <input type="radio" id="priority1"
                                name="priority" value="Low" checked={priority === 'Low'} onChange={({target}) => setPriority(target.value)}/>
                         <label htmlFor="priority1">Low</label>
@@ -83,7 +83,7 @@ const Create = () => {
                         <label htmlFor="priority3">High</label>
                     </div>
                 </div>
-                <div className='form-element'>
+                <div className='form-element submit-button'>
                     <button type='submit'>Save</button>
                 </div>
             </form>

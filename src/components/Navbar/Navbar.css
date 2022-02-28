@@ -1,16 +1,16 @@
 .outer-container {
     display: flex;
     background-color: var(--main-color);
-    margin: auto;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
     color: white;
 }
-ul {
+.navbar {
     display: flex;
-    list-style-type: none;
-    gap: 30px;}
-li {
+    align-items: center;
+    justify-content: space-around;
+}
+ul > li {
+    flex: 1;
 }
 a:link {
     color: white;
