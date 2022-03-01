@@ -1,5 +1,4 @@
 .outer-container {
-    display: flex;
     background-color: var(--main-color);
     margin: 0 auto;
     color: white;
@@ -7,10 +6,12 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: right;
+    padding: 1em;
 }
-ul > li {
-    flex: 1;
+li {
+    flex: 1 auto;
+    text-align: center;
 }
 a:link {
     color: white;
