@@ -57,18 +57,24 @@ const Create = () => {
                             Status:
                         </p>
                         <div className="status">
-                            <input type="radio" id="statusChoice1"
-                                   name="status" value="Pending" checked={status === 'Pending'}
-                                   onChange={({target}) => setStatus(target.value)}/>
-                            <label htmlFor="statusChoice1">Pending</label>
-                            <input type="radio" id="statusChoice2"
-                                   name="status" value="In Progress" checked={status === 'In Progress'}
-                                   onChange={({target}) => setStatus(target.value)}/>
-                            <label htmlFor="statusChoice2">In Progress</label>
-                            <input type="radio" id="statusChoice3"
-                                   name="status" value="Complete" checked={status === 'Complete'}
-                                   onChange={({target}) => setStatus(target.value)}/>
-                            <label htmlFor="statusChoice3">Complete</label>
+                            <div className="grouping">
+                                <input type="radio" id="statusChoice1"
+                                       name="status" value="Pending" checked={status === 'Pending'}
+                                       onChange={({target}) => setStatus(target.value)}/>
+                                <label htmlFor="statusChoice1">Pending</label>
+                            </div>
+                            <div className="grouping">
+                                <input type="radio" id="statusChoice2"
+                                       name="status" value="In Progress" checked={status === 'In Progress'}
+                                       onChange={({target}) => setStatus(target.value)}/>
+                                <label htmlFor="statusChoice2">In Progress</label>
+                            </div>
+                            <div className="grouping">
+                                <input type="radio" id="statusChoice3"
+                                       name="status" value="Complete" checked={status === 'Complete'}
+                                       onChange={({target}) => setStatus(target.value)}/>
+                                <label htmlFor="statusChoice3">Complete</label>
+                            </div>
                         </div>
                     </div>
                     <div className="form-element">
@@ -76,22 +82,28 @@ const Create = () => {
                             Priority:
                         </p>
                         <div className="priority">
-                            <input type="radio" id="priority1"
-                                   name="priority" value="Low" checked={priority === 'Low'}
-                                   onChange={({target}) => setPriority(target.value)}/>
-                            <label htmlFor="priority1">Low</label>
-                            <input type="radio" id="priority2"
-                                   name="priority" value="Med" checked={priority === 'Med'}
-                                   onChange={({target}) => setPriority(target.value)}/>
-                            <label htmlFor="priority2">Med</label>
-                            <input type="radio" id="priority3"
-                                   name="priority" value="High" checked={priority === 'High'}
-                                   onChange={({target}) => setPriority(target.value)}/>
-                            <label htmlFor="priority3">High</label>
+                            <div className="grouping">
+                                <input type="radio" id="priority1"
+                                       name="priority" value="Low" checked={priority === 'Low'}
+                                       onChange={({target}) => setPriority(target.value)}/>
+                                <label htmlFor="priority1">Low</label>
+                            </div>
+                            <div className="grouping">
+                                <input type="radio" id="priority2"
+                                       name="priority" value="Med" checked={priority === 'Med'}
+                                       onChange={({target}) => setPriority(target.value)}/>
+                                <label htmlFor="priority2">Med</label>
+                            </div>
+                            <div className="grouping">
+                                <input type="radio" id="priority3"
+                                       name="priority" value="High" checked={priority === 'High'}
+                                       onChange={({target}) => setPriority(target.value)}/>
+                                <label htmlFor="priority3">High</label>
+                            </div>
                         </div>
                     </div>
                     <div className="form-element">
-                        <button type="submit" className='submit-button'>Save</button>
+                        <button type="submit" className="submit-button">Save</button>
                     </div>
                 </form>
             </div>
