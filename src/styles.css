@@ -1,0 +1,17 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #364fc7;
+    --tint-color-lightest: #edf2ff;
+    --tint-color-lighter: #dbe4ff;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+
+}
