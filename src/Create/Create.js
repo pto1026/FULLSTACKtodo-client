@@ -90,8 +90,8 @@ const Create = () => {
                             <label htmlFor="priority3">High</label>
                         </div>
                     </div>
-                    <div className="form-element submit-button">
-                        <button type="submit">Save</button>
+                    <div className="form-element">
+                        <button type="submit" className='submit-button'>Save</button>
                     </div>
                 </form>
             </div>

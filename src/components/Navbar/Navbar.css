@@ -17,12 +17,12 @@ li {
 }
 
 a:link, a:visited {
-    background-color: var(--main-color);
     padding: 12px;
     display: inline-block;
-    color: #fff;
+    color: var(--main-color);
     border-radius: 100px;
     text-decoration: none;
+    font-weight: 500;
 }
 
 a:hover, a:active {
@@ -47,6 +47,11 @@ nav {
     height: 32px;
     width: 32px;
     display: inline-block;
+    strok: var(--tint-color-lightest);
+    padding: 2px;
+    background-color: var(--main-color);
+    border-radius: 100px;
+    border-bottom-right-radius: 0;
 }
 
 h2 {
