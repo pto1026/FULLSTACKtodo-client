@@ -1,0 +1,53 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+.navbar {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 12px;
+    margin-right: 12px;
+
+}
+li {
+}
+
+a:link, a:visited {
+    background-color: var(--main-color);
+    padding: 12px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    padding: 12px;
+    margin-top: 12px;
+    margin-left: 12px;
+    align-items: center;
+    gap: 12px;
+}
+.icon {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+}
+
+h2 {
+}

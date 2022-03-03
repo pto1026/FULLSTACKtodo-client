@@ -5,13 +5,14 @@
 }
 
 :root {
-    --main-color: #364fc7;
-    --tint-color-lightest: #edf2ff;
-    --tint-color-lighter: #dbe4ff;
+    --main-color: #1c7ed6;
+    --tint-color-lightest: #e7f5ff;
+    --tint-color-lighter: #d0ebff;
+    --gray-color: #343a40;
 }
 
 body {
     font-family: "Inter", sans-serif;
     font-weight: 400;
-
+    color: var(--gray-color);
 }

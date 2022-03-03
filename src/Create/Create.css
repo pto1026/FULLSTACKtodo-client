@@ -1,0 +1,20 @@
+.form-container {
+    margin: 48px auto 0;
+    padding: 24px;
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+}
+
+.main-container {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.form-element {
+    margin-bottom: 16px;
+    padding: 16px;
+}
+.form-element:last-child {
+    margin-bottom: 0;
+}
