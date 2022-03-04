@@ -9,10 +9,12 @@
     --tint-color-lightest: #e7f5ff;
     --tint-color-lighter: #d0ebff;
     --gray-color: #343a40;
+    --accent-color: #DBC2CF;
 }
 
 body {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     color: var(--gray-color);
+    background-image: linear-gradient(45deg, #f8f9fa, #dee2e6);
 }
