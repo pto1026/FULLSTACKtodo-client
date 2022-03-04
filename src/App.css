@@ -3,8 +3,7 @@ SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
-.page-container {
-}
+
 
 .header-container {
     margin: 128px 128px;
@@ -42,7 +41,7 @@ p {
     align-items: flex-start;
     justify-content: space-around;
     border-radius: 12px;
-    box-shadow: 0 20px 30px 0 #ced4da);
+    box-shadow: 0 20px 30px 0 #ced4da;
     background-color: #a5d8ff;
 
 }
