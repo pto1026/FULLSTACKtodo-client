@@ -11,7 +11,8 @@ SPACING SYSTEM (px)
     gap: 12px;
     margin-top: 12px;
     margin-right: 12px;
-
+    font-size: 15.63px;
+    font-weight: 500;
 }
 li {
 }
@@ -55,4 +56,7 @@ nav {
 }
 
 h2 {
+    font-size: 24.41px;
+    font-weight: 700;
+    letter-spacing: -1.1px;
 }
